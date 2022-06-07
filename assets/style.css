@@ -1,140 +1,72 @@
-:root {
-  --primary-color: rgb(109, 199, 193);
-  --secondary-color: rgb(196, 218, 236);
-  --tertiary-color: rgb(20, 57, 87);
-}
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body{
-  background-color: var(--secondary-color);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(177. 184, 186);
 }
 header {
+  padding: 20px 35px;
   display: flex;
   justify-content: space-between;
-  background-color: var(--tertiary-color);
-  align-items: center;
-  padding: 20px 20px 20px 0;
+  background-color: rgb(72, 161, 181);
 }
-header h1{
-background-color: var(--primary-color);
-padding-left: 80px;
-padding-right: 10px;
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #fce138;
+  margin: 0;
+  display: inline;
 }
-header h1 a {
+header a {
+  color: #eafafd;
   text-decoration: none;
-  color: var(--tertiary-color);
-  flex-grow: 2;
 }
 header nav {
-  width: 40%
+  float: right;
+  margin: 7px 0;
 }
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
+header nav ul li {
+  display: inline-flex;
+
 }
 header nav ul li a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-size: 1.7vw;
-}
-.hero {
-  height: 300px;
-  background-image: url(./images/pizza.jpg);
-  background-size: cover;
-}
-.hero div {
-  display:flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-right: 7px;
-  padding-bottom: 5px;
-}
-.hero p {
-  padding: 5px;
-  color: rgb(148, 207, 255);
-  font-size: large;
-  background-color: rgba(20, 57, 87, 0.5);
-  border-radius: 13px;
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
 }
 .about-me {
-  height: 300px;
-  display: flex;
-  padding: 30px;
-  justify-content: space-around;
-  align-items: center;
-}
-.about-me-header {
-  color: var(--tertiary-color);
-}
-.about-me-text {
-  padding: 20px;
-  border-left: 4px solid var(--tertiary-color);
-  max-height: 300px;
-}
-.about-me-text p {
-  color: var(--tertiary-color);
-}
-.work {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px;
-  justify-content:space-around;
-  align-items: center;
 }
-
 .work-container {
-  display: flexbox;
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 25%;
+  position: relative;
 }
-.work-header {
-  padding: 20px;
-  color: var(--tertiary-color);
-  border-right: 4px solid var(--tertiary-color);
+.large-container {
+  flex: 2 1 100%;
+  flex-wrap: wrap;
+  order: 1;
+  min-height: 400px;
+  max-width: 400px;
 }
-.big-container {
-  border: 3px solid var(--primary-color);
-  border-radius: 4px;
-  background-image: url(./images/run-buddy-pic.png);
-  background-position: center;
-  background-size: cover;
-  min-width: 1000px;
-  min-height: 600px;
-  margin-bottom: 10px;
+.small-container {
+  flex: 1 1 50%;
+  flex-wrap: wrap;
+  order: 2;
+  min-height: 200px;
+  max-width: 200px;
 }
-.big-container a {
-  display:inline-block;
-  color: var(--tertiary-color);
-  text-decoration: none;
-  background-color: var(--primary-color);
+.flex-wrap {
+  flex-wrap: wrap;
+  flex: 75%;
 }
-#city{
-  border: 3px solid var(--primary-color);
-  border-radius: 4px;
-  height: 300px;
-  width: 400px;
-  background-image: url(./images/cityscape.jpg);
-  background-position: center;
-  background-size: cover;
-  margin: 5px;
+.large-container img {
+  width: 600px;
 }
-#city a {
-  display:inline-block;
-  color: var(--tertiary-color);
-  text-decoration: none;
-  background-color: var(--primary-color);
-}
-#codecademy {
-  border: 3px solid var(--primary-color);
-  border-radius: 4px;
-  height: 300px;
-  width: 400px;
-  background-image: url(./images/codecademy.png);
-  background-position: center;
-  background-size: cover;
-  margin:5px;
+.small-container img {
+  width: 200px;
 }
